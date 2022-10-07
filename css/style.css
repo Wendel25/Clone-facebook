@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    font-family: Helvetica;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.container-man{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fecharOTrem{
+    padding: 40px 2%;
+    height: 60%;
+    min-height: 400px;
+    max-height: 700px;
+    width: 94%;
+    max-width: 530px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.color-firt{
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+
+table{
+    width: 100%;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: 106px;
+    margin: -28px;
+    margin-top: 45px;
+}
+
+.text-aling-text{
+
+    font-weight: 400;
+    font-size: 28px;
+    color: #1c1e21;
+    max-width: 500px;
+}
+
+form{
+    padding: 16px 16px 24px 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    
+}
+
+from a, input, button {
+    display: block;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    outline: none;
+}
+
+input:focus{
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2 #e7f3ff;
+    caret-color: #1877f2;
+}
+
+input[placeholder] {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: #1d2129;
+    opacity: 0.6;
+}
+
+form a {
+    font-size: 14px;
+    color: #1877f2;
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    text-decoration: none;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dadde1;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+.entrar, 
+.criar-conta{
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding:16px;
+    cursor: pointer;
+    text-align: center;
+    transition: 200ms cubic-bezier(.08, .52, .52, 1);
+}
+
+.criar-conta-modal{
+    width: 50%;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding:10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 200ms cubic-bezier(.08, .52, .52, 1);
+}
+
+.entrar{
+    font-size: 20px;
+    background: #1877f2;
+    width: 100%;
+}
+
+.entrar:hover{
+    background: #166fe5;
+}
+
+.criar-conta,
+.criar-conta-modal{
+    font-size: 17px;
+    background: #42b72a;
+    margin: 0 auto;
+    margin-top: 16px;
+} 
+
+.criarPagina,
+p > a{
+    color: #1c1e21;
+    font-size: 14px;
+    margin: 28px 0 0 0;
+    text-align: center;
+}
+
+p > a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p > a:hover{
+    text-decoration: underline;
+}
+
+form .text-form{
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+
+.login-text{
+    color: #166fe5;
+    font-weight: bold;
+    position: absolute;
+    top: 35px;
+    font-size: 30px;
+}
+
+.modal{
+    padding-top: 30px;
+}
+
+.btn-fecharModal{
+    color: #166fe5;
+    font-size: 20px;
+    font-weight: bold; 
+    text-align: center;
+}
+
+.color-btn{
+    width: 26px;
+    height: 26px;
+    border-radius: 18px;
+    background-color: #ccc;
+    right: 17px;
+    top:  32px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.cadastro{
+    padding: 16px 16px 24px 16px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.date-nasci{
+    color: rgb(69, 68, 68);
+    font-size: 14px;
+}
+
+.date-dia{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 9%;
+    width: 145px;
+}
